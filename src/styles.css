@@ -1,0 +1,25 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+.container {
+  background: whitesmoke;
+  max-width: 600px;
+  margin: 45px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.city {
+  text-align: center;
+}
+.degrees {
+  text-align: center;
+  font-size: 65px;
+}
+.search-form {
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
