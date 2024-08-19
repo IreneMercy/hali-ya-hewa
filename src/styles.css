@@ -2,7 +2,7 @@
   font-family: "Times New Roman", Times, serif;
 }
 .container {
-  background: #bfd8d5;
+  background: #ffffff;
   max-width: 600px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -51,10 +51,10 @@
 .footer {
   text-align: center;
   font-size: 14px;
-  border-top: whitesmoke solid 1px;
+  border-top: #ffcab0 solid 1px;
 }
 .search-city {
-  background-color: whitesmoke;
+  background-color: #ffcab0;
   border: none;
   border-radius: 7px;
   padding: 10px;
