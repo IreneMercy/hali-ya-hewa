@@ -35,7 +35,11 @@
 }
 .degrees {
   text-align: center;
-  font-size: 66px;
+  font-size: 68px;
+  margin: 55px;
+}
+.unit-small {
+  font-size: 40px;
 }
 .search-form {
   text-align: center;

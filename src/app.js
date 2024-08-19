@@ -1,8 +1,40 @@
 function updateWeatherDetails(response) {
   let currentTemp = document.querySelector("#temperature");
-  currentTemp.innerHTML = Math.round(response.data.temperature.current) + "°";
   let currentCity = document.querySelector(".inputcity");
+  let weatherDescription = document.querySelector("#description");
+  let currentHumidity = document.querySelector("#hum");
+  let currentWind = document.querySelector("#wind");
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+  currentTemp.innerHTML = `${Math.round(
+    response.data.temperature.current
+  )} <sup class ="unit-small">°C</sup>`;
+  console.log(response.data);
+
+  weatherDescription.innerHTML = response.data.condition.description;
+  timeElement.innerHTML = formatDate(date);
   currentCity.innerHTML = response.data.city;
+  currentHumidity.innerHTML = `${response.data.temperature.humidity}%`;
+  currentWind.innerHTML = `${response.data.wind.speed}km/h`;
+}
+function formatDate(date) {
+  let min = date.getMinutes();
+  let hour = date.getHours();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+
+  if (min < 10) {
+    min = `0${min}`;
+  }
+  return `${day} ${hour}:${min}`;
 }
 function searchCity(city) {
   let apiKey = "b8a2a2of6ef0b2dad8384b77f37302t6";
@@ -18,4 +50,4 @@ function inputValue(event) {
 
 let searchButton = document.querySelector("#submit-search");
 searchButton.addEventListener("click", inputValue);
-searchCity("Nairobi");
+searchCity("Lisbon");
