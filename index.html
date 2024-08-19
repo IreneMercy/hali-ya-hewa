@@ -19,7 +19,7 @@
           Humidity: <span class="hum">66%</span>, Wind:
           <span class="wind">3.13km/h</span>
         </div>
-        <p class="degrees">38°</p>
+        <p id="temperature" class="degrees">38°</p>
       </header>
       <main>
         <form class="search-form">
@@ -27,9 +27,15 @@
             type="search"
             placeholder="Enter city.."
             required
+            id="search-city"
             class="search-city"
           />
-          <input type="submit" value="Search" class="submit-search" />
+          <input
+            type="submit"
+            value="Search"
+            id="submit-search"
+            class="submit-search"
+          />
         </form>
       </main>
       <br />
