@@ -8,7 +8,7 @@ function updateWeatherDetails(response) {
   let date = new Date(response.data.time * 1000);
   currentTemp.innerHTML = `${Math.round(
     response.data.temperature.current
-  )} <sup class ="unit-small">°C</sup>`;
+  )}<sup class ="unit-small">°C</sup>`;
   console.log(response.data);
 
   weatherDescription.innerHTML = response.data.condition.description;

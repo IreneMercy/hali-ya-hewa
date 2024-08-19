@@ -14,11 +14,14 @@
   text-align: center;
   color: #f96d00;
   font-size: 40px;
+  display: flex;
+  justify-content: center;
 }
 .weather-details {
   text-align: center;
   color: #2c786c;
   font-size: 14px;
+  font-weight: bold;
 }
 .hum {
   background-color: #f96d00;
@@ -31,7 +34,8 @@
   padding: 0 2px;
 }
 .emoji {
-  font-size: 30px;
+  height: 46px;
+  width: 45px;
 }
 .degrees {
   text-align: center;
@@ -39,7 +43,7 @@
   margin: 55px;
 }
 .unit-small {
-  font-size: 40px;
+  font-size: 30px;
 }
 .search-form {
   text-align: center;
