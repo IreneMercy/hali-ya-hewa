@@ -2,7 +2,7 @@
   font-family: "Times New Roman", Times, serif;
 }
 .container {
-  background: white;
+  background: #ffffff;
   max-width: 600px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -13,10 +13,29 @@
 .city {
   text-align: center;
   color: #f96d00;
+  font-size: 40px;
+}
+.weather-details {
+  text-align: center;
+  color: #2c786c;
+  font-size: 14px;
+}
+.hum {
+  background-color: #f96d00;
+  color: #ffffff;
+  padding: 0 2px;
+}
+.wind {
+  background-color: #f96d00;
+  color: #ffffff;
+  padding: 0 2px;
+}
+.emoji {
+  font-size: 30px;
 }
 .degrees {
   text-align: center;
-  font-size: 65px;
+  font-size: 66px;
 }
 .search-form {
   text-align: center;
@@ -27,7 +46,7 @@
   border-top: #ffcab0 solid 1px;
 }
 .search-city {
-  background-color: whitesmoke;
+  background-color: #ffcab0;
   border: none;
   border-radius: 7px;
   padding: 10px;
@@ -45,4 +64,5 @@
 }
 .links {
   color: #f96d00;
+  text-decoration: none;
 }
