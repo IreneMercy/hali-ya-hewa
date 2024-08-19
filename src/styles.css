@@ -2,7 +2,7 @@
   font-family: "Times New Roman", Times, serif;
 }
 .container {
-  background: whitesmoke;
+  background: white;
   max-width: 600px;
   margin: 45px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -12,6 +12,7 @@
 
 .city {
   text-align: center;
+  color: #f96d00;
 }
 .degrees {
   text-align: center;
@@ -20,6 +21,28 @@
 .search-form {
   text-align: center;
 }
-footer {
+.footer {
   text-align: center;
+  font-size: 14px;
+  border-top: #ffcab0 solid 1px;
+}
+.search-city {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  width: 40%;
+  font-size: 14px;
+}
+
+.submit-search {
+  background-color: #f96d00;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 7px;
+  padding: 10px;
+}
+.links {
+  color: #f96d00;
 }
