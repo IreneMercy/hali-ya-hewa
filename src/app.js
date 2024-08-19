@@ -18,3 +18,4 @@ function inputValue(event) {
 
 let searchButton = document.querySelector("#submit-search");
 searchButton.addEventListener("click", inputValue);
+searchCity("Nairobi");
