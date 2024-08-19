@@ -6,11 +6,18 @@ function updateWeatherDetails(response) {
   let currentWind = document.querySelector("#wind");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
+
+  iconElement.innerHTML = `<img
+            
+            class="emoji"
+            src="${response.data.condition.icon_url}"
+            alt="weather"
+          />`;
+
   currentTemp.innerHTML = `${Math.round(
     response.data.temperature.current
   )}<sup class ="unit-small">°C</sup>`;
-  console.log(response.data);
-
   weatherDescription.innerHTML = response.data.condition.description;
   timeElement.innerHTML = formatDate(date);
   currentCity.innerHTML = response.data.city;
